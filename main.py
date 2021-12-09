@@ -66,4 +66,4 @@ print(sample)
 
 
 #Creating csv to submit on kaggle
-sample.to_csv('sample.csv',index=False)
+sample.to_csv('sample(1).csv',index=False)
