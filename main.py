@@ -64,6 +64,16 @@ sample = test[['Id']].copy()
 sample['Cover_Type'] = Cover_type
 print(sample)
 
+print("\nt_train:\n")
+t_train.head()
+
+print("\nt_test:\n")
+t_test.head()
+from sklearn.linear_model import LinearRegression
+mnb = LinearRegression()
+mnb.fit(t_train,t_train)
+mnb.predict(t_test)
+mnb.score(t_test,y_test)
 
 #Creating csv to submit on kaggle
 sample.to_csv('sample(1).csv',index=False)
