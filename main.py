@@ -5,12 +5,12 @@ from google.colab import drive
 drive.mount('/content/drive')
 
 #importing different libraries to work with
-import pandas as panda
+import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
 
 #Loading Training Data
-train=panda.read_csv('/content/drive/MyDrive/smtp/train.csv')
+train=pd.read_csv('/content/drive/MyDrive/smtp/train.csv')
 
 #Using variable for labels
 y = train.Cover_Type
