@@ -21,7 +21,7 @@ X = train.drop('Cover_Type', axis=1)
 #Splitting The Data y 20% and x 80%
 t_train, t_test, y_train, y_test = train_test_split(X, y,test_size=0.2)
 
-#Hamza's Contribution
+#Omar's Contribution
 #Using No Smoothing:
 clf = MultinomialNB(alpha=0)
 clf.fit(abs(t_train),y_train)
